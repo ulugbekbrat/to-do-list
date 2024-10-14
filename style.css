@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit';
+}
+
+.check {
+    text-decoration: line-through;
+    color: gray; /* Цвет завершенных задач */
+}
+
+.h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#inp {
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #6C63FF;
+    width: 595px;
+    height: 38px;
+    padding: 0 10px; /* Внутренний отступ */
+}
+
+#btn, #btn2 {
+    border-radius: 5px;
+    border: none;
+    background: #6C63FF;
+    color: white;
+    cursor: pointer; /* Указатель на кнопках */
+}
+
+#btn {
+    width: 64px;
+    height: 38px;
+    margin-right: 10px;
+}
+
+#btn2 {
+    width: 38px;
+    height: 38px;
+}
+
+.box {
+    margin-right: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#list {
+    list-style: none; /* Убираем маркеры у списка */
+    padding: 0; /* Убираем отступы */
+}
+
+#list li {
+    display: flex;
+    align-items: center; /* Выравнивание по вертикали */
+    padding: 10px; /* Отступы вокруг элементов списка */
+    border-bottom: 1px solid #6C63FF; /* Линия внизу элемента списка */
+    margin: 5px 0; /* Отступы между элементами списка */
+}
+
+#list li:last-child {
+    border-bottom: none; /* Убираем линию у последнего элемента */
+}
+
+#list li input[type="checkbox"] {
+    margin-right: 10px; /* Отступ между чекбоксом и текстом */
+}
+
+#list li button {
+    margin-left: auto; /* Выравнивание кнопки вправо */
+    background-color: #ff4d4d; /* Цвет кнопки удаления */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px; /* Внутренние отступы для кнопки */
+    cursor: pointer; /* Указатель на кнопке */
+}
+
+#list li button:hover {
+    background-color: #ff1a1a; /* Цвет кнопки при наведении */
+}
